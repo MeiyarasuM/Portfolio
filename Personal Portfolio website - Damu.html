@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)file:///C:/Users/prave/OneDrive/Desktop/html/portfolio.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website - Damu</title>
+    <link rel="stylesheet" href="./Personal Portfolio website - Damu_files/style.css" <="" head="">
+
+</head><body>
+   
+    <div id="header">
+<div class="container">
+    <nav>
+        <img scr="html2/goole1.png" class="logo">
+       
+        <ul>
+            <li><a href="file:///C:/Users/prave/OneDrive/Desktop/html/portfolio.html#">Home</a></li>
+            <li><a href="file:///C:/Users/prave/OneDrive/Desktop/html/portfolio.html#">About</a></li>
+            <li><a href="file:///C:/Users/prave/OneDrive/Desktop/html/portfolio.html#">Services</a></li>
+            <li><a href="file:///C:/Users/prave/OneDrive/Desktop/html/portfolio.html#">Portfolio</a></li>
+            <li><a href="file:///C:/Users/prave/OneDrive/Desktop/html/portfolio.html#">Contact</a></li>
+        </ul>
+
+    </nav>
+    <div class="header-text">
+        <p>
+            Software Developer
+        </p>
+        <h>Hi, I'm <span>Damodharan</span> <br> I'm Study in KSRIET</h>
+    </div>
+</div>
+</div>
+<!--------about-------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div id="about-col-1">
+                <img src="./Personal Portfolio website - Damu_files/portfolioimage.png">
+            </div>
+            <div id="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm a Software Developer and i'm made a multiple project in this software field.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab(&#39;Skills&#39;)">Skills</p>
+                    <p class="tab-links" onclick="opentab(&#39;Experience&#39;)">Experience</p>
+                    <p class="tab-links" onclick="opentab(&#39;Education&#39;)">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Web Developement</span><br>Web Page Develope</li>
+                        <li><span>App Developement</span><br>App Develope</li>
+                        <li><span>UI/UX</span><br>Web Page Design</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>Web Developement</span><br>1 year</li>
+                        <li><span>App Developement</span><br>1 year</li>
+                        <li><span>UI/UX</span><br>2 year</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>BE/ECE</span><br>KSRIET</li>
+                        <li><span>12th</span><br>School</li>
+                        <li><span>10th</span><br>School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+var tablinks=document.getElementsByClassName("tab-links");
+var tabcontents=document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+
+</body></html>
